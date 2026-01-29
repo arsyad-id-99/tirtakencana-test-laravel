@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    protected $table = 'dbo.Customer'; 
+    protected $table = 'customer'; 
     protected $primaryKey = 'CustID';
     public $incrementing = false; 
     protected $keyType = 'string';

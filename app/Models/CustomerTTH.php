@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CustomerTTH extends Model
 {
-    protected $table = 'dbo.CustomerTTH';
+    protected $table = 'customertth';
     protected $primaryKey = 'ID'; 
     public $timestamps = false;
     protected $guarded = []; 

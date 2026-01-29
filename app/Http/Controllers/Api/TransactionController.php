@@ -38,8 +38,8 @@ class TransactionController extends Controller
     {
         $request->validate([
             'TTHNo' => 'required',
-            'TTOTTPNo' => 'required|unique:dbo.CustomerTTH,TTOTTPNo',
-            'CustID' => 'required|exists:dbo.Customer,CustID',
+            'TTOTTPNo' => 'required|unique:customertth,TTOTTPNo',
+            'CustID' => 'required|exists:customer,CustID',
             'SalesID' => 'required',
             'details' => 'required|array',
             'details.*.Jenis' => 'required',
